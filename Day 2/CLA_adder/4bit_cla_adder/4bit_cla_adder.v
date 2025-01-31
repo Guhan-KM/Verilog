@@ -12,7 +12,7 @@ wire [3:0] g;
 wire [3:0] c;
 
 assign g=a&b;
-assign p=(a^b)&c;
+assign p=(a^b);
 
 assign c[0]=cin;
 assign c[1]=g[0]|(p[0]&c[0]);
