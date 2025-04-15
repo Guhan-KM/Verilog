@@ -2,7 +2,7 @@ module priority_encoder(
   input [7:0] d,
   output reg [2:0] y);
   always @(*) begin
-    casex(d)  // case x treat both x and z values as dont care x and z can either be 0 or 1 ,but casex dont care that it will see if the 1 matches the value given by us
+    casex(d)  // case x treat both x and z values as dont care x and z can either be 0 or 1 ,but it didn't care that, it will see if the 1 matches the value given by us
     
       8'b00000001 : y = 3'd0;
       8'b0000001x : y = 3'd1;
